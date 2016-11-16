@@ -1,32 +1,23 @@
-function pageScroll(obj) {
-		position = $("#block"+obj).offset().top;
-        var yPos = window.pageYOffset;
-        yPos += 95;
-        if(yPos>position)
-        {
-            yPos = position;
-        }
-        window.scroll(0,yPos); // horizontal and vertical scroll increments
-        scrolldelay = setTimeout('pageScroll(\''+obj+'\')',40); // scrolls every 100 milliseconds
-        if(yPos==position)
-        {
-            yPos = 0;
-            clearTimeout(scrolldelay);
-        }
-    }
-function pageScrollUp(obj) {
-		position = $("#block"+obj).offset().top;
-        var yPos = window.pageYOffset;
-        yPos -= 95;
-        if(yPos<position)
-        {
-            yPos = position;
-        }
-        window.scroll(0,yPos); // horizontal and vertical scroll increments
-        scrolldelay = setTimeout('pageScrollUp(\''+position+'\')',40); // scrolls every 100 milliseconds
-        if(yPos==position)
-        {
-            clearTimeout(scrolldelay);
-        }
-    }
-	
+$(document).ready(function(){
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/scrolling-nav.css">
   <link rel=stylesheet type="text/css" href="app.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </head>
 
@@ -11,20 +14,23 @@
 		<div class="topic" id="block0" align="center">
       <img src="http://i.imgur.com/T6PN20o.png" class="logo"></img>
       <h1>Music Sheet Online Editor</h1>		
-      <div class="option" align="center">
-        <ul class="navbar">
+	  <nav class="navbar navbar-inverse">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
           <li>
-            <a href="javascript:pageScroll(1)">ABOUT</a>
+            <a class="page-scroll" href="#about-page">ABOUT</a>
           </li>
           <li>
-            <a href="javascript:pageScroll(2)">MEMBER</a>
+            <a class="page-scroll" href="#member-page">MEMBER</a>
           </li>
           <li>
-            <a href="javascript:pageScroll(3)">CONTACT</a>
+            <a class="page-scroll" href="#contact-page">CONTACT</a>
           </li>
         </ul>
-      </div>        
+      </div>
+	  </nav>
     </div>
+		<section id="about-page" class="about-section">
 		<div class="about" id="block1" align="center">
 			<h2 align="center">About</h2>
 			<div class="about-content">
@@ -48,6 +54,8 @@
 				</ul>
 			</div>
 		</div>
+		</section>
+		<section id="member-page" class="member-section">
 		<div class="member" id="block2" align="center">
 			<h2 align="center">Member</h2>
 			<ul class="member-list">
@@ -97,11 +105,14 @@
 				</li>
 			</ul>
 		</div>
+		</section>
+		<section id="contact-page" class="contact-section">
 		<div class="contact" id="block3" align="center">
 			<h2>Contact Us</h2>
 			<h3></h3>
 			<div>
 		</div>
+		</section>
 	</div>
 </body>
 </html>
