@@ -1,0 +1,94 @@
+.navbar-inverse {
+	border-color: transparent;
+}
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+}
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+h1, h2{
+  font-family: Monotype Corsiva;
+  padding-top: 30px;
+}
+h3, h4, h5{
+  font-family: Calibri;
+  font-weight: lighter;
+}
+li{
+  display: inline-block;
+}
+.topic, .about, .member, .contact{
+  display: block;
+  height: 100vh;
+  margin: -10px;
+  margin-top: -30px;
+}
+.topic{
+  background-color: #222222; 
+}
+.about{
+  background-color: #F4ECDF;
+}
+.member{
+  background-color: #white;
+}
+.contact{
+  background-color: #B7ADA1;
+}
+.topic .logo{
+  position: absolute;
+  left: 65vh;
+  top: 40vh;
+  width: 50vh;
+}
+.topic h1{
+  color: white;
+  padding-top: 60vh;
+}
+.contact h2{
+  padding-top: 40vh;
+}
+.about h2, .member h2{
+  display: inline-block;
+  width: 60vh;
+  border-bottom: solid 1.5px #A1A1A1;  
+}
+.navbar li{
+  border-radius: 3px;
+  border: solid 1px #A1A1A1;  
+  padding: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #C1AA8E;
+}
+
+.navbar a{
+	color: #C1AA8E;
+}
+
+.features li{
+  align: center;
+  margin: 1vh;
+}
+
+.member-list img{
+  width: 25vh;
+}
+
+img{
+  width: 25vh;
+}
+
+.github{
+  display: inline-block;
+}
+.github img{
+  height: 30px;
+  width: 30px;
+}
+
